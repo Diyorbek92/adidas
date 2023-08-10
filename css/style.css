@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.header {
+  height: 145px;
+  background-color: black;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-logo {
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+.container {
+}
+.sitenav {
+}
+.sitenav-list {
+  display: flex;
+  gap: 20px;
+}
+.sitenav-link {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  padding: 8px 12px;
+  color: whitesmoke;
+  transition: 0.4s ease;
+}
+
+.sitenav-link:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.2) 50%
+    ),
+    url(../images/hero-img-adidas.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 109vh;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+.content > * {
+  transform: translateY(100px);
+  transition: transform 0.9s;
+}
+
+.content:hover > * {
+  transform: translateY(0px);
+}
+.hero-title {
+  font-family: "Tektur", cursive;
+  font-size: 55px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #d81313;
+}
+
+.hero-p {
+  font-family: "Tektur", cursive;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 300px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #bd3b3b;
+  font-family: "Tektur", cursive;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.btn {
+  color: #fff;
+  width: 160px;
+  height: 40px;
+  background: #b20000;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  color: black;
+  background-color: #f0ebeb;
+}
+
+.adidas-item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+.features-titile {
+  padding-left: 30px;
+  font-family: "Tektur", cursive;
+  font-size: 55px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #13d8b7;
+}
+
+.title-content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.title-content:hover {
+  opacity: 1;
+}
+
+.title-content:hover > * {
+  transform: rotateY(100px);
+  transition: transform 0.9s;
+}
+
+.title-content:hover > * {
+  transform: translateY(50px);
+}
+
+.adidas-item p {
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  display: flex;
+  text-align: end;
+  padding-right: auto;
+  padding-left: 100vh;
+  padding-bottom: 20px;
+  color: #ababab;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.adidas-item a {
+  padding-top: 5px;
+  text-align: center;
+  color: #fff;
+  width: 70px;
+  height: 30px;
+  background: #b20000;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+.mens {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../images/adidas-mens.jpg);
+}
+.womens {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/adidas-womens.jpg);
+}
+.best {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/adidas-best.jpg);
+}
+.collection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/adidas-collection.jpg);
+}
